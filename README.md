@@ -68,7 +68,7 @@ You may use [this](https://github.com/bodrovis/jquery-slick-rails-demo) simple R
 If you are using Slick with Turbolinks, you might run into some problems with the browser's "back" button.
 If that happens, the following solution might help:
 
-    $(document).on('turbolinks:load', $('#my-slider').slick({}) 
+    $(document).on('turbolinks:load', $('#my-slider').slick({}))
     $(document).on('turbolinks:before-cache', $('#my-slider').slick('unslick')) 
 
 Read more [on StackOverflow](http://stackoverflow.com/questions/39627881/jquery-plugin-initialization-on-browser-back-button-for-turbolinks-rails-5).
